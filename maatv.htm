@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<style>*{margin:0;padding:0;}body{background-color:#000;color:#fff;height:100%;width:100%;overflow:hidden;position:absolute;}</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<meta content='noindex,nofollow' name='robots'/>
+<meta name="referrer" content="no-referrer">
+<script type="text/javascript" src="https://github.com/airbenderz/player/blob/master/clappr.min.js"></script>
+<script type="text/javascript" src="https://github.com/airbenderz/player/blob/master/level-selector.js"></script>
+<div style="width:100%;height:100%;">
+<div id="player"></div>
+</div>
+<script>
+ player = new Clappr.Player({
+ source: 'http://sklktcdnems05.cdnsrv.jio.com/jiotv.live.cdn.jio.com/Maa_TV/Maa_TV.m3u8',
+  parentId: '#player',
+  width: '100%',
+  height: '100%',
+  hideMediaControl: true,
+  mediacontrol: {seekbar: "#ffaa56", buttons: "#ff7f00"},
+  position: 'top-right',
+  autoPlay: true,
+  pause: true,
+  disableVideoTagContextMenu: true,
+ //watermark: "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Star_Maa.jng.jpg/200px-Star_Maa.jng.jpg", position: 'top-right',
+  //watermarkLink: "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Star_Maa.jng.jpg/200px-Star_Maa.jng.jpg",
+  plugins: {
+                'core': [LevelSelector], 
+            },
+  
+  });
+</script>
+</body>
+</html>
